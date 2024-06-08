@@ -1,0 +1,35 @@
+.content {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.popup {
+    display: none; /* Ocultar o pop-up por padrão */
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #28a745; /* Fundo verde */
+    color: #fff; /* Texto branco */
+    padding: 10px 30px 0px 30px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Garantir que o pop-up esteja acima de outros elementos */
+}
+
+.popup.show {
+    display: block; /* Mostrar o pop-up quando a classe 'show' for adicionada */
+}
+
+#popupText {
+    text-align: center;
+    line-height: 1.5;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* Fundo preto */
+    overflow-x: hidden; /* Evitar rolagem horizontal */
+}
